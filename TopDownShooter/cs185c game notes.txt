@@ -1,0 +1,49 @@
+Items:
+-Health+
+-Atk Speed+-
+-Damage+-
+-Movement Speed+-
+-Double movement speed for 7 seconds
+-Double atk speed for 7 seconds
+-Invincible for 4 seconds
+- anything else you can think of
+
+Maps (3):
+-music for each map
+-each with own environment and terrain
+-make sure to have regions we can add power ups
+-maybe obstacles for each map?
+
+
+GUI for each player: 
+-health bar (visual so you can see how much you have left) (100 hp?)
+
+
+Main Menu (3 Stages):
+-find some skin from asset store to make it look more refined, rather than the default bubble
+
+Character: 
+-smoothen out movement speed (realistic acceleration)
+
+
+Evan:
+GUI hp bar
+try to either find something to replace cube character, but if you cant thats fine as well
+try to make some visual difference to show that the character is invincible
+change the sample bullet we are using to something more realistic/usable
+
+Spencer:
+Two maps
+Make sure controller works with each character
+
+Nirav:
+Items and its visual animation (try to make the items floating/hovering instead of on the ground?)
+Item script that destroys itself as well as upgrades character
+One map
+
+Brandon: 
+Game Name?
+Clean cut main menu, maybe with music?
+Game Over: Player # wins! Screen 
+	-when a player dies, it should smoothly transition over to this screen
+	-it should have a go back to main menu button
