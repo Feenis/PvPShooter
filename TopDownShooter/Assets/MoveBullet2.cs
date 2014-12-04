@@ -1,16 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MoveBullet : MonoBehaviour {
+public class MoveBullet2 : MonoBehaviour {
 	public float speed;
 	private int death = 180;		//timer for bullet destroy: 3 seconds
-
+	
 	void Start () {
-		if(Input.GetAxis("Forward") > 0)
-			transform.Translate (new Vector3(0,0,speed*1.75f));;
+		if(Input.GetAxis("Forward2") > 0)
+			transform.Translate (new Vector3(0,0,speed*1.75f));
 	}
 	
-
+	
 	void Update () {
 		death--;
 		//this might work as game mechanic (sidenote)
@@ -19,13 +19,14 @@ public class MoveBullet : MonoBehaviour {
 		if (death <= 0) 
 			Destroy (this.gameObject);
 	}
-
+	
 	void OnTriggerEnter(Collider hit) 
 	{
-		if (hit.gameObject.name == "Cube2") {
+		if (hit.gameObject.name == "Cube") {
 			Destroy (this.gameObject);
 		}
 	}
+	
 
-
+	
 }
