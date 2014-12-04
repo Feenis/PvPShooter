@@ -27,6 +27,10 @@ public class CharMovement2 : MonoBehaviour {
 		Vector3 movement = new Vector3(0,0,0);
 		shot = false;										//shot checking so it does not damage twice for one bullet
 
+		//Attack Speed Checking
+		if(atkspeed < maxatkspd)
+			atkspeed = maxatkspd;
+
 		//Forward Movement and Acceleration
 		if (Input.GetAxis("Forward2") > 0) {
 			if(currspeed > maxspeed)
@@ -92,6 +96,12 @@ public class CharMovement2 : MonoBehaviour {
 		}
 		if(hit.gameObject.name == "speeddown") {
 			//cube2.GetComponent<CharMovement2>().lowerspeed();
+		}
+		if(hit.gameObject.name == "atkspeedup") {
+			atkspeed -= .1f;
+		}
+		if(hit.gameObject.name == "atkspeeddown") {
+			//cube2.GetComponent<CharMovement2>().loweratkspeed();
 		}
 		if(hit.gameObject.name == "healthup") {
 			if(currhealth+10 <= maxhealth)
